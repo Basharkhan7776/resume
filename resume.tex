@@ -42,8 +42,8 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.6in}
 \addtolength{\textwidth}{1.2in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
+\addtolength{\topmargin}{-.75in}
+\addtolength{\textheight}{1.5in}
 
 \urlstyle{same}
 
@@ -53,47 +53,46 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{1em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \scshape\raggedright\large
+}{}{1em}{}[\color{black}\titlerule \vspace{1.5pt}]
+\titlespacing*{\section}{0pt}{4pt}{1.5pt}
 
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{{#1}}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}}
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=1pt, itemsep=2pt, parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, topsep=1pt, itemsep=1pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -111,30 +110,27 @@
     GitHub: \href{https://github.com/basharkhan7776}{\textcolor{black}{\textit{\ul{github.com/basharkhan7776}}}} \enspace|\enspace
     LinkedIn: \href{https://linkedin.com/in/basharkhan7776}{\textcolor{black}{\textit{\ul{linkedin.com/in/basharkhan7776}}}}
 \end{center}
+\vspace{-8pt}
 
-%-----------SUMMARY-----------
-\section{Summary}
-\vspace{2pt}
-\small\textit{Software Engineer with 2+ years of experience designing, building, and deploying production-grade systems. Founder-minded builder and active open-source contributor who ships end to end, from architecture and development to deployment and scale.}
-\vspace{-4pt}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {J.K. Institute of Applied Physics and Technology}{Prayagraj, Uttar Pradesh}
+      {University of Allahabad : Department of Electronics and Communication}{Prayagraj, Uttar Pradesh}
       {Bachelor of Technology in Computer Science and Engineering $|$ CGPA: 7.8}{Aug. 2023 -- Present}
   \resumeSubHeadingListEnd
 
 
 %-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0.15in, label={}, topsep=1pt]
     \small{\item{
      \textbf{Languages}{: JavaScript, TypeScript, Rust, Java, C, SQL} \\
      \textbf{Frontend}{: React.js, Next.js, React Native, Redux, Zustand, Recoil, Tailwind CSS, ShadCN UI, Framer Motion} \\
      \textbf{Backend}{: Node.js, Express.js, MongoDB, Prisma, WebSocket, Redis} \\
-     \textbf{DevOps \& Tools}{: Docker, AWS, Git, GitHub Actions, Firebase, Supabase, Nginx}
+     \textbf{DevOps \& Tools}{: Docker, AWS, Git, GitHub Actions, Firebase, Supabase, Nginx} \\
+     \textbf{CS Fundamentals}{: Operating Systems, DBMS, System Design, Computer Networks, OOP}
     }}
  \end{itemize}
 
@@ -145,41 +141,26 @@
 
   \resumeSubheading
     {Founder}{June 2026 -- Present}
-    {OpenLabs}{Banglore}
+    {OpenLabs}{Hybrid}
     \resumeItemListStart
-      \resumeItem{Founded \href{https://openlabsdevs.com}{\textcolor{black}{\textit{\ul{OpenLabs}}}}; built interactive landing page and HRMS portal; shipped \href{https://collegenetwork.space}{\textcolor{black}{\textit{\ul{College Network}}}}, serving 1000+ students with in-app chat counseling.}
-      \resumeItem{Closed client deals for websites, CRMs, and automations; launched open-source ecosystem with \href{https://github.com/openlabsops/snap-form}{\textcolor{black}{\textit{\ul{Snap-Form}}}} monorepo and 5 active contributors.}
+      \resumeItem{Founded \href{https://openlabsdevs.com}{\textcolor{black}{\textit{\ul{OpenLabs}}}}; built interactive landing page and HRMS portal; shipped \href{https://collegenetwork.space}{\textcolor{black}{\textit{\ul{College Network}}}}, serving 1000+ students with in-app chat counseling. Close clients and Open Source Program.}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Open Source Contributor}{}
-      {AOSSIE Org}{Remote}
-      \resumeItemListStart
-        \resumeItem{Improved local development infrastructure by \href{https://github.com/AOSSIE-Org/DebateAI/pull/179}{\textcolor{black}{\textit{\ul{containerizing}}}} React frontend and Go backend with Docker Compose; resolved \href{https://github.com/AOSSIE-Org/DebateAI/pull/178}{\textcolor{black}{\textit{\ul{UI issues}}}} and shipped \href{https://github.com/AOSSIE-Org/DebateAI/pull/209}{\textcolor{black}{\textit{\ul{SEO and PWA}}}} manifest.}
-        \resumeItem{Improved client UX with \href{https://github.com/AOSSIE-Org/DebateAI/pull/218}{\textcolor{black}{\textit{\ul{toast}}}} notifications; built a comprehensive \href{https://github.com/AOSSIE-Org/DebateAI/pull/253}{\textcolor{black}{\textit{\ul{Go test}}}} suite; fixed \href{https://github.com/AOSSIE-Org/Rein/pull/200}{\textcolor{black}{\textit{\ul{Wayland cursor}}}} operations on Ubuntu.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Full Stack Developer}{Oct. 2025 -- May 2026}
-      {Novastack Solutions}{Mumbai-Hybrid}
+      {Full Stack Developer}{July 2025 -- May 2026}
+      {Novastack Solutions}{Hybrid}
       \resumeItemListStart
         \resumeItem{Worked on \href{https://novahealthsolution.com/}{\textcolor{black}{\textit{\ul{Nova Health Care}}}} ecosystem (user, provider, admin apps) using React Native and React.js; built \href{https://novastacksolutions.io}{\textcolor{black}{\textit{\ul{Novastack Solutions}}}} landing page and achieved \#1 Google ranking for Novastack Solutions.}
         \resumeItem{Developed \href{https://odefi.app/}{\textcolor{black}{\textit{\ul{Odefi}}}}, a 95\% on-chain decentralized staking platform on BNB Chain; implemented SSR, SEO, Next.js client, and admin panel with 5\% server dependency.}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Full Stack Developer Intern}{July 2025 -- Sept. 2025}
-      {BlockSolutions Labs}{Remote}
-      \resumeItemListStart
         \resumeItem{Built whole new frontend for \href{https://splosh.app/}{\textcolor{black}{\textit{\ul{Splosh}}}}; deployed on AWS (1 server, 2 clients) with CI/CD pipeline and Auto Scaling Groups, 400ms server response time for static pages and built admin panel.}
       \resumeItemListEnd
 
-    \resumeSubheading
-      {Frontend Development Intern}{Aug. 2024 -- Oct. 2024}
-      {E-Cell IIT Bombay}{Remote}
-      \resumeItemListStart
-        \resumeItem{Redesigned Campus Ambassador dashboard using React.js and Tailwind CSS; improved UX and performance.}
-      \resumeItemListEnd
+      \resumeSubheading
+        {Open Source Contributor}{}
+        {AOSSIE Org}{Remote}
+        \resumeItemListStart
+          \resumeItem{Improved local development infrastructure by \href{https://github.com/AOSSIE-Org/DebateAI/pull/179}{\textcolor{black}{\textit{\ul{containerizing}}}} React frontend and Go backend with Docker Compose; built a comprehensive \href{https://github.com/AOSSIE-Org/DebateAI/pull/253}{\textcolor{black}{\textit{\ul{Go test}}}} suite; fixed \href{https://github.com/AOSSIE-Org/Rein/pull/200}{\textcolor{black}{\textit{\ul{Wayland cursor}}}} operations on Ubuntu.}
+        \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
@@ -189,28 +170,37 @@
     \resumeSubHeadingListStart
       \resumeSubheading
         {Nsh $|$ \href{https://github.com/Basharkhan7776/nsh}{\textcolor{black}{\textit{\ul{link}}}}}{Dec. 2025}
-        {\textbf{Tech Stack:} Rust, Ratatui, Tokio, Qdrant, LLM SDK}{}
+        {\textbf{Tech Stack:} Rust, Ratatui, Tokio, Qdrant, AI agent}{}
         \resumeItemListStart
-          \resumeItem{Agentic Unix shell and autonomous runtime in Rust with Ratatui TUI, PTY streaming, dual-mode scheduler, embedded ReAct agent , isolated AskPass vault for sudo/SSH/Git, and 126 passing tests.}
+          \resumeItem{Event-driven Unix terminal runtime, dual-mode scheduler, and an isolated Unix socket AskPass IPC broker with volatile memory zeroization for sudo/SSH/Git.}
+          \resumeItem{Autonomous ReAct agent runtime with two-phase plan and build workflow, multi-grammar tool parsing, recursive @-context traversal, and 128 passing unit/integration tests.}
         \resumeItemListEnd
 
       \resumeSubheading
-        {Mudir $|$ \href{https://github.com/basharkhan7776/mudir}{\textcolor{black}{\textit{\ul{link}}}}}{July 2026}
+        {Mudir $|$ \href{https://github.com/basharkhan7776/mudir}{\textcolor{black}{\textit{\ul{link}}}}}{Jan. 2026}
         {\textbf{Tech Stack:} React Native (Expo), TypeScript, Redux Toolkit, Express.js, MongoDB, Better Auth}{}
         \resumeItemListStart
-          \resumeItem{Offline-first inventory and double-entry ledger system with dynamic schema collections, atomic JSON persistence, debounced Redux storage middleware, bidirectional cloud sync with conflict resolution, and Better Auth.}
+          \resumeItem{Offline-first system with atomic JSON persistence, debounced Redux storage middleware, and bidirectional cloud sync with conflict resolution to Express/MongoDB.}
+          \resumeItem{Dynamic schema collections with custom multi-type fields, a double-entry financial ledger PDF generation, and Google OAuth session management.}
         \resumeItemListEnd
 
       \resumeSubheading
         {Churn CLI $|$ \href{https://github.com/Basharkhan7776/Churn}{\textcolor{black}{\textit{\ul{link}}}}}{June 2025}
-        {\textbf{Tech Stack:} TypeScript, Bun, npm}{}
+        {\textbf{Tech Stack:} TypeScript, Bun, Node.js, EJS, npm}{}
         \resumeItemListStart
-          \resumeItem{CLI scaffolding tool with 15+ templates, 4 languages, 4 package managers, HTTP/WebSocket, Prisma ORM, EVM contract init (Foundry/Hardhat), TypeScript path aliases and automated GitHub Actions CI/CD.}
+          \resumeItem{A modular CLI scaffolding engine on npm with interactive/flag workflows, EJS templating, Zod environment validation, and TypeScript path alias.}
+          \resumeItem{Matrix code generation supporting 6 ORMs, 4 databases, HTTP/WebSocket protocols, JWT/OAuth auth, and automated Docker with CI/CD.}
         \resumeItemListEnd
 
 
     \resumeSubHeadingListEnd
 
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeItemListStart
+    \resumeItem{Top 100 Google Solution Challenge 2024 regional; 2nd place CodeBlock hackathon (50k INR prize); Member at top 300 Builders Community; 20+ global freelance projects}
+    \resumeItem{Participated in Google Summer of Code 2026 in AOSSIE Org; Campus Ambassador E-Cell IIT Bombay (100+ members, 10+ events); GDG Technical Lead (20+ webinars, 500+ students).}
+  \resumeItemListEnd
 
 
 \end{document}
