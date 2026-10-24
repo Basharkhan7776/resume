@@ -144,23 +144,23 @@
     {Founder}{June 2026 -- Present}
     {OpenLabs}{Hybrid}
     \resumeItemListStart
-      \resumeItem{Founded \href{https://openlabsdevs.com}{\textcolor{black}{\textit{\ul{OpenLabs}}}}; built interactive landing page and HRMS portal; shipped \href{https://collegenetwork.space}{\textcolor{black}{\textit{\ul{College Network}}}}, serving 1000+ students with in-app chat counseling. Close deals with clients and Open Source Program with 10+ contributors.}
+      \resumeItem{Founded \href{https://openlabsdevs.com}{\textcolor{black}{\textit{\ul{OpenLabs}}}}; built interactive landing page and CMS portal; shipped \href{https://collegenetwork.space}{\textcolor{black}{\textit{\ul{College Network}}}}, serving 2000+ students with in-app chat counseling p2p connection. Close deals with clients and Open Source Program with 10+ contributors.}
     \resumeItemListEnd
 
     \resumeSubheading
-      {Full Stack Developer}{July 2025 -- May 2026}
+      {Software Engineer}{July 2025 -- May 2026}
       {Novastack Solutions}{Hybrid}
       \resumeItemListStart
-        \resumeItem{Worked on \href{https://novahealthsolution.com/}{\textcolor{black}{\textit{\ul{Nova Health Care}}}} ecosystem (user, provider, admin apps) using React Native and React.js; built \href{https://novastacksolutions.io}{\textcolor{black}{\textit{\ul{Novastack Solutions}}}} landing page.}
-        \resumeItem{Developed \href{https://odefi.app/}{\textcolor{black}{\textit{\ul{Odefi}}}}, a 95\% on-chain decentralized staking platform on BNB Chain; implemented SSR, SEO, Next.js client, and admin panel with 5\% server dependency.}
-        \resumeItem{Built whole new frontend for \href{https://splosh.app/}{\textcolor{black}{\textit{\ul{Splosh}}}}; deployed on AWS (1 server, 2 clients) with CI/CD pipeline and Auto Scaling Groups, 400ms server response time for static pages and built admin panel.}
+        \resumeItem{Architected the Nova Health Solutions platform: two React Native apps, an admin portal, and a monolithic Express.js and WebSocket server backed by PostgreSQL, Prisma, and Redis; designed all screens in Figma and implemented the app frontends code.}
+        \resumeItem{Developed Odefi, a 95\% on-chain decentralized staking protocol on BNB Chain, with an SSR and SEO-optimized Next.js client and admin panel; implemented staking, daily ROI, multi-level referrals, and cross-contract invocations within deployment size limits.}
+        \resumeItem{Rebuilt the \href{https://splosh.app/}{\textcolor{black}{\textit{\ul{Splosh}}}} frontend, a crypto staking platform; deployed on AWS (1 server, 2 clients) with a CI/CD pipeline and Auto Scaling Groups, and developed a recursive address-blocking bot.}
       \resumeItemListEnd
 
       \resumeSubheading
         {Open Source Contributor}{Jan 2026}
         {AOSSIE Org}{Remote}
         \resumeItemListStart
-          \resumeItem{Participated in GSOC 2026: Improved local development infrastructure by \href{https://github.com/AOSSIE-Org/DebateAI/pull/179}{\textcolor{black}{\textit{\ul{containerizing}}}} React frontend and Go backend with Docker Compose; built a comprehensive \href{https://github.com/AOSSIE-Org/DebateAI/pull/253}{\textcolor{black}{\textit{\ul{Go test}}}} suite; fixed \href{https://github.com/AOSSIE-Org/Rein/pull/200}{\textcolor{black}{\textit{\ul{Wayland cursor}}}} operations on Ubuntu.}
+          \resumeItem{Participated in GSOC 2026: Improved local development infrastructure by \href{https://github.com/AOSSIE-Org/DebateAI/pull/179}{\textcolor{black}{\textit{\ul{containerizing}}}} React frontend and Golang backend with Docker Compose; built a comprehensive \href{https://github.com/AOSSIE-Org/DebateAI/pull/253}{\textcolor{black}{\textit{\ul{Go test}}}} suite; fixed \href{https://github.com/AOSSIE-Org/Rein/pull/200}{\textcolor{black}{\textit{\ul{Wayland cursor}}}} operations on Ubuntu.}
         \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -169,28 +169,21 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {OpenFlow $|$ \href{https://github.com/basharkhan7776/Openflow}{\textcolor{black}{\textit{\ul{link}}}}}{June 2026}
+      {\textbf{Tech Stack:} TypeScript, Bun, Prisma, SQLite, Tauri}{}
+      \resumeItemListStart
+        \resumeItem{Local-first n8n-style automation platform where workflows are portable JSON and execute on local or VPS workers; 36+ modules across triggers, core, SQL, Google, AI, and comms with cron, webhook, and form triggers.}
+        \resumeItem{Built AES-256-GCM user-owned credential vault with a blind Express/Vercel ciphertext store, deploy CLI for push/pull/export/import, and React Flow canvas with Prisma run logs across Tauri desktop and browser apps.}
+      \resumeItemListEnd
+
       \resumeSubheading
         {Nsh $|$ \href{https://github.com/Basharkhan7776/nsh}{\textcolor{black}{\textit{\ul{link}}}}}{Dec. 2025}
         {\textbf{Tech Stack:} Rust, Ratatui, Tokio, Qdrant, AI agent}{}
         \resumeItemListStart
-          \resumeItem{Event-driven Unix terminal runtime, dual-mode scheduler, and an isolated Unix socket AskPass IPC broker with volatile memory zeroization for sudo/SSH/Git.}
-          \resumeItem{Autonomous ReAct agent runtime with two-phase plan and build workflow, multi-grammar tool parsing, recursive @-context traversal, and 128 passing unit/integration tests.}
-        \resumeItemListEnd
-
-      \resumeSubheading
-        {Mudir $|$ \href{https://github.com/basharkhan7776/mudir}{\textcolor{black}{\textit{\ul{link}}}}}{Jan. 2026}
-        {\textbf{Tech Stack:} React Native (Expo), TypeScript, Redux Toolkit, Express.js, MongoDB, Better Auth}{}
-        \resumeItemListStart
-          \resumeItem{Offline-first system with atomic JSON persistence, debounced Redux storage middleware, and bidirectional cloud sync with conflict resolution to Express/MongoDB.}
-          \resumeItem{Dynamic schema collections with custom multi-type fields, a double-entry financial ledger PDF generation, and Google OAuth session management.}
-        \resumeItemListEnd
-
-      \resumeSubheading
-        {Churn CLI $|$ \href{https://github.com/Basharkhan7776/Churn}{\textcolor{black}{\textit{\ul{link}}}}}{June 2025}
-        {\textbf{Tech Stack:} TypeScript, Bun, Node.js, EJS, npm}{}
-        \resumeItemListStart
-          \resumeItem{A modular CLI scaffolding engine on npm with interactive/flag workflows, EJS templating, Zod environment validation, and TypeScript path alias.}
-          \resumeItem{Matrix code generation supporting 6 ORMs, 4 databases, HTTP/WebSocket protocols, JWT/OAuth auth, and automated Docker with CI/CD.}
+          \resumeItem{Event-driven Unix terminal runtime/Harness, support all bash commands, and an isolated Unix socket AskPass IPC broker with volatile memory zeroization for sudo/SSH/Git. Auto-suggestions and history storage within terminal.}
+          \resumeItem{Autonomous ReAct agent runtime with two-phase plan and build workflow, multi local running agent tools, recursive @-context traversal of bash commands through LLM, and 128 passing unit/integration tests.}
         \resumeItemListEnd
 
 
@@ -199,8 +192,9 @@
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
   \resumeItemListStart
-    \resumeItem{Top 100 Google Solution Challenge 2024 regional; 2nd place CodeBlock hackathon (50k INR prize); Member at top 300 Builders Community; 20+ global freelance projects}
-    \resumeItem{Participated in Google Summer of Code 2026 in AOSSIE Org; Campus Ambassador E-Cell IIT Bombay (100+ members, 10+ events); GDG Technical Lead (20+ webinars, 500+ students).}
+    \resumeItem{Top 100 Google Solution Challenge 2024 regional; 2nd place CodeBlock hackathon (50k INR prize); Member at top 300 Builders Community called AthenaFOSS; 20+ global freelance projects}
+    \resumeItem{Participated in Google Summer of Code 2026 in AOSSIE Org; Campus Ambassador E-Cell IIT Bombay (100+ members, 10+ events); GDG Technical Lead (20+ webinars, 500+ students) and took some technical sessions.}
+    \resumeItem{Open-source contributor to Boa JS (JavaScript engine); build multiple developers tools like md-dev, create-churn, uploader extension, xScroller and many more; helping new developers with Go and Rust exercise apps; evaluate newly released LLM models and share findings publicly.}
   \resumeItemListEnd
 
 
